@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lock_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/shoushiback"
+    tools:context=".MainActivity">
+    <com.example.locksetupactivity.view.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_login_textview_focused"
+            android:onClick="onClick" />
+
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/right_btn"
+            android:layout_width="0dip"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login_textview_focused"
+            android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>
